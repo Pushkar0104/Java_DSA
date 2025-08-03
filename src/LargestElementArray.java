@@ -1,8 +1,26 @@
-public class LargestElementArray {
-    public static int getLargestElement{
-    //hello
-    }
+static class Solution {
+    public int largestElement(int[] nums) {
+        int max = nums[0];
+        for(int i = 0; i < nums.length; i++){
+            if(max > nums[i]){
+                max = max;
+            }
+            else if(max < nums[i]){
+                max = nums[i];
+            }
+            else{
+                max = nums[i];
+            }
+        }
+        return max;
 
-    public static void main(String[] args) {
     }
+}
+
+public static void main(String[] args) {
+    Solution sol = new Solution();
+    int[] nums = {3,1,7,4,7, 15};
+    int result = sol.largestElement(nums);
+    System.out.println("The largest element is: " + result);
+    
 }
