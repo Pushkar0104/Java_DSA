@@ -19,7 +19,7 @@ static class Solution {
 
 public static void main(String[] args) {
     Solution sol = new Solution();
-    int[] nums = {3,1,7,4,7, 15};
+    int[] nums = {3,1,7,4,7};
     int result = sol.largestElement(nums);
     System.out.println("The largest element is: " + result);
     
